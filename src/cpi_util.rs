@@ -16,6 +16,7 @@ pub fn invoke_signed<'info, T: Accounts<'info> + ToAccountInfos<'info> + ToAccou
         accounts: cpi_ctx.accounts.to_account_metas(None),
         data: instruction_data.data(),
     };
+
     anchor_lang::solana_program::program::invoke_signed(
         &ix,
         &cpi_ctx.to_account_infos(),
