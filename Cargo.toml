@@ -15,8 +15,8 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-anchor-lang = "0.20.1"
-anchor-spl = "0.20.1"
-solana-program = "1.9.9"
+anchor-lang = "0.24.2"
+anchor-spl = "0.24.2"
+solana-program = "~1.9.13"
 marinade-finance = { path = "../liquid-staking-program/programs/marinade-finance/",features = ["no-entrypoint"]}
 #marinade-finance = { git = "https://github.com/marinade-finance/liquid-staking-program" }
